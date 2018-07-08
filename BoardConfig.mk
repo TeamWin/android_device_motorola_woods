@@ -94,3 +94,5 @@ TW_HAVE_SELINUX := true
 TW_DEFAULT_LANGUAGE := en
 TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
+#use toolbox
+TW_USE_TOOLBOX := true

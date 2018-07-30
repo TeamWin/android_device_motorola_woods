@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 #device_path
 LOCAL_PATH := device/motorola/woods
 
@@ -26,11 +25,12 @@ $(call inherit-product, device/motorola/woods/full_woods.mk)
 PRODUCT_NAME := omni_woods
 
 # Ramdisk
-PRODUCT_PACKAGES += \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc \
     $(LOCAL_PATH)/recovery/root/init.recovery.service.rc:root/init.recovery.service.rc \
     $(LOCAL_PATH)/recovery/root/init.recovery.usb.rc:root/init.recovery.usb.rc \
-    $(LOCAL_PATH)/recovery/root/ueventd.mt6735.rc:root/ueventd.mt6735.rc
+    $(LOCAL_PATH)/recovery/root/ueventd.mt6735.rc:root/ueventd.mt6735.rc \
+    $(LOCAL_PATH)/recovery/root/sbin/unzip:root/sbin/unzip
 
 #Allow_missing_dependencies
 ALLOW_MISSING_DEPENDENCIES=true

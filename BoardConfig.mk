@@ -74,25 +74,23 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
 
 # TWRP stuff
-#TW_DEVICE_VERSION := 8.1 > izaqkull
 TW_THEME := portrait_hdpi
-#TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_BRIGHTNESS_PATH := /sys/devices/platform/leds-mt65xx/leds/lcd-backlight/brightness
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto/gadget/lun%d/file
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 100
-TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_FB2PNG := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_NO_CPU_TEMP := true
 TW_REBOOT_RECOVERY := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
-TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
 TW_HAVE_SELINUX := true
 TW_DEFAULT_LANGUAGE := en
 TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
 #use toolbox
 TW_USE_TOOLBOX := true
+

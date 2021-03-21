@@ -96,3 +96,4 @@ TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
 #use toolbox
 TW_USE_TOOLBOX := true
+TW_EXCLUDE_BASH := true
